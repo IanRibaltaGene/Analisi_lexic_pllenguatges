@@ -1,4 +1,4 @@
-TARGET=activitat1
+TARGET=exercici1
 all : $(TARGET)
 
 $(TARGET) : $(TARGET).l
