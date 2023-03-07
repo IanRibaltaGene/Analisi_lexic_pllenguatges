@@ -464,9 +464,10 @@ char *yytext;
 #line 2 "exercici1.l"
 	//Processat del lletguatge regular constants enteres
 	//Traduir octal(o, O), hex(ox, OX), binari(b, B) o decimal(nomes cal reconeixer) a decimal  
+#define YY_NO_INPUT 1
 
 	int count=1;
-#line 469 "lex.yy.c"
+#line 470 "lex.yy.c"
 
 #define INITIAL 0
 #define COMMENT 1
@@ -528,8 +529,6 @@ extern int yywrap ( void );
 #endif
 
 #ifndef YY_NO_UNPUT
-    
-    static void yyunput ( int c, char *buf_ptr  );
     
 #endif
 
@@ -685,10 +684,10 @@ YY_DECL
 		}
 
 	{
-#line 15 "exercici1.l"
+#line 17 "exercici1.l"
 
 
-#line 691 "lex.yy.c"
+#line 690 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -747,79 +746,79 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 17 "exercici1.l"
+#line 19 "exercici1.l"
 {BEGIN COMMENT;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 18 "exercici1.l"
+#line 20 "exercici1.l"
 {BEGIN 0;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 19 "exercici1.l"
+#line 21 "exercici1.l"
 ;
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 21 "exercici1.l"
+#line 23 "exercici1.l"
 {printf("%ld\n", strtol(yytext+1, NULL, 2));}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 23 "exercici1.l"
+#line 25 "exercici1.l"
 {printf("%ld\n", strtol(yytext+1, NULL, 8));}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 25 "exercici1.l"
+#line 27 "exercici1.l"
 {printf("%ld\n", strtol(yytext+2, NULL, 16));}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 27 "exercici1.l"
+#line 29 "exercici1.l"
 {printf("%s\n", yytext);}
 	YY_BREAK
 case 8:
 /* rule 8 can match eol */
 YY_RULE_SETUP
-#line 29 "exercici1.l"
+#line 31 "exercici1.l"
 {count++;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 31 "exercici1.l"
+#line 33 "exercici1.l"
 
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 33 "exercici1.l"
+#line 35 "exercici1.l"
 {printf("Caracter: %s no reconegut a la linea %d\n", yytext, count);
    BEGIN PANIC;}
 	YY_BREAK
 case 11:
 /* rule 11 can match eol */
 YY_RULE_SETUP
-#line 36 "exercici1.l"
+#line 38 "exercici1.l"
 {count++;
 		BEGIN 0;}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 38 "exercici1.l"
+#line 40 "exercici1.l"
 {BEGIN 0;}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 39 "exercici1.l"
+#line 41 "exercici1.l"
 
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 41 "exercici1.l"
+#line 43 "exercici1.l"
 ECHO;
 	YY_BREAK
-#line 822 "lex.yy.c"
+#line 821 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 case YY_STATE_EOF(COMMENT):
 case YY_STATE_EOF(PANIC):
@@ -1156,43 +1155,6 @@ static int yy_get_next_buffer (void)
 }
 
 #ifndef YY_NO_UNPUT
-
-    static void yyunput (int c, char * yy_bp )
-{
-	char *yy_cp;
-    
-    yy_cp = (yy_c_buf_p);
-
-	/* undo effects of setting up yytext */
-	*yy_cp = (yy_hold_char);
-
-	if ( yy_cp < YY_CURRENT_BUFFER_LVALUE->yy_ch_buf + 2 )
-		{ /* need to shift things up to make room */
-		/* +2 for EOB chars. */
-		int number_to_move = (yy_n_chars) + 2;
-		char *dest = &YY_CURRENT_BUFFER_LVALUE->yy_ch_buf[
-					YY_CURRENT_BUFFER_LVALUE->yy_buf_size + 2];
-		char *source =
-				&YY_CURRENT_BUFFER_LVALUE->yy_ch_buf[number_to_move];
-
-		while ( source > YY_CURRENT_BUFFER_LVALUE->yy_ch_buf )
-			*--dest = *--source;
-
-		yy_cp += (int) (dest - source);
-		yy_bp += (int) (dest - source);
-		YY_CURRENT_BUFFER_LVALUE->yy_n_chars =
-			(yy_n_chars) = (int) YY_CURRENT_BUFFER_LVALUE->yy_buf_size;
-
-		if ( yy_cp < YY_CURRENT_BUFFER_LVALUE->yy_ch_buf + 2 )
-			YY_FATAL_ERROR( "flex scanner push-back overflow" );
-		}
-
-	*--yy_cp = (char) c;
-
-	(yytext_ptr) = yy_bp;
-	(yy_hold_char) = *yy_cp;
-	(yy_c_buf_p) = yy_cp;
-}
 
 #endif
 
@@ -1826,6 +1788,6 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 41 "exercici1.l"
+#line 43 "exercici1.l"
 
 

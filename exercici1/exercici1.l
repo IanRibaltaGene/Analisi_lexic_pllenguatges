@@ -1,6 +1,8 @@
 	//Processat del lletguatge regular constants enteres
 	//Traduir octal(o, O), hex(ox, OX), binari(b, B) o decimal(nomes cal reconeixer) a decimal  
 
+%option nounput
+%option noinput
 %x COMMENT PANIC
 
 bin (b|B)[0-1]+
