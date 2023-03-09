@@ -14,7 +14,7 @@ int line_number = 1;
 
 %%
 
-[ \t]                  { /* ignorar espais blancs i tabs */ }
+[ \t]+                 { /* ignorar espais blancs i tabs */ }
 "//"		       { line_number++; } /* Comentaris, incrementa line_number */
 [A-Z]                    return VAR;  /* match variable */
 \!                       return NEG;  /* match negat */
