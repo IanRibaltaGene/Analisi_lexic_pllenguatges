@@ -4,6 +4,7 @@
 ## Índex
 * [Canvis a l'enunciat](#canvis-a-lenunciat)
 * [Test usats](#tests-usats)
+* [Comentaris](#comentaris)
 * [Operadors](#operadors)
   * [Negació](#negació)
   * [Conjunció](#conjunció)
@@ -11,7 +12,7 @@
   * [Implicació](#implicació)
   * [Doble Implicació](#doble-implicació)
 * [Simbols extres](#simbols-extres)
-  * [Parentesis](#parentesis)
+  * [Parentesis](#parèntesis)
 * [Variables propocisionals](#variables-proposicionals)
 * [Separació de proposicions](#separació-de-proposicions)
 
@@ -21,6 +22,9 @@
 
 ## Tests usats
 - test.txt
+
+## Comentaris
+- Comentaris començen amb // i acaben amb el salt de línia "\n".
 
 ## Operadors
 ### Negació
