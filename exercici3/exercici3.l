@@ -1,6 +1,6 @@
 %option nounput
 %option noinput
-%x PANIC
+%x PANIC COMMENT
 
 %{
 #include <stdio.h>
@@ -19,7 +19,13 @@ int line_number = 1;
 %%
 
 [ \t]+                  /* ignorar espais blancs i tabs */ 
-"//"		        { line_number++; } /* Comentaris, incrementa line_number */
+
+	/* Comentaris, incrementa line_number */
+"//"			{ BEGIN COMMENT; }
+<COMMENT>\n		{ line_number++; 
+			BEGIN 0; }
+<COMMENT>. ;
+
 [A-Z]                   { return VAR;    } /* match variable */
 \!                      { return NEG;    } /* match negat */
 \&\&                    { return CONJ;   } /* match conj */

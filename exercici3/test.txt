@@ -1,3 +1,5 @@
+// Test per a l'exercici 3
+
 P && Q < - > (!R||(Q - > T))
 P & Q
 P && q <->
