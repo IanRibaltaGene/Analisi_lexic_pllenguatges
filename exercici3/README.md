@@ -12,7 +12,7 @@
   * [Implicació](#implicació)
   * [Doble Implicació](#doble-implicació)
 * [Simbols extres](#simbols-extres)
-  * [Parentesis](#parèntesis)
+  * [Parèntesis](#parèntesis)
 * [Variables propocisionals](#variables-proposicionals)
 * [Separació de proposicions](#separació-de-proposicions)
 
