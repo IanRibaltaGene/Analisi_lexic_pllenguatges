@@ -714,7 +714,7 @@ YY_DECL
 		}
 
 	{
-#line 27 "exercici4.l"
+#line 31 "exercici4.l"
 
 
 #line 720 "lex.yy.c"
@@ -776,125 +776,125 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 29 "exercici4.l"
+#line 33 "exercici4.l"
 /* ignorar espais blancs i tabs */ 
 	YY_BREAK
 /* Comentaris, incrementa line_number */
 case 2:
 YY_RULE_SETUP
-#line 32 "exercici4.l"
+#line 36 "exercici4.l"
 { BEGIN COMMENT; }
 	YY_BREAK
 case 3:
 /* rule 3 can match eol */
 YY_RULE_SETUP
-#line 33 "exercici4.l"
+#line 37 "exercici4.l"
 { line_number++; 
 			BEGIN 0; }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 35 "exercici4.l"
+#line 39 "exercici4.l"
 
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 37 "exercici4.l"
+#line 41 "exercici4.l"
 { return VAR;    } /* match variable */
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 38 "exercici4.l"
+#line 42 "exercici4.l"
 { return CONS;	 } /* match constant */
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 39 "exercici4.l"
+#line 43 "exercici4.l"
 { return PRED;   } /* match predicats */
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 40 "exercici4.l"
+#line 44 "exercici4.l"
 { return FUNC;	 } /* match funcions */
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 42 "exercici4.l"
+#line 46 "exercici4.l"
 { return NEG;    } /* match negat */
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 43 "exercici4.l"
+#line 47 "exercici4.l"
 { return CONJ;   } /* match conj */
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 44 "exercici4.l"
+#line 48 "exercici4.l"
 { return DISJ;   } /* match disj */
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 45 "exercici4.l"
+#line 49 "exercici4.l"
 { return IMP;    } /* match imp */
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 46 "exercici4.l"
+#line 50 "exercici4.l"
 { return DIMP;   } /* match doble imp */
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 48 "exercici4.l"
+#line 52 "exercici4.l"
 { return FORALL; } /* match forall */
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 49 "exercici4.l"
+#line 53 "exercici4.l"
 { return EXISTS; } /* match exists */
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 51 "exercici4.l"
+#line 55 "exercici4.l"
 { return PARESQ;    } /* match parentesis esquerra */ 
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 52 "exercici4.l"
+#line 56 "exercici4.l"
 { return PARDRE;    } /* match parentesis dreta */
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 53 "exercici4.l"
+#line 57 "exercici4.l"
 { return SEPARATOR; } /* match separator */
 	YY_BREAK
 case 19:
 /* rule 19 can match eol */
 YY_RULE_SETUP
-#line 55 "exercici4.l"
+#line 59 "exercici4.l"
 { line_number++; } /* match newline, incrementa line_number */
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 56 "exercici4.l"
+#line 60 "exercici4.l"
 { /* match any other character, print error */ 
 			  printf("Error: caracter no valid '%c' a la linea %d\n", yytext[0], line_number);
 			  BEGIN PANIC; }
 	YY_BREAK
 case 21:
 YY_RULE_SETUP
-#line 59 "exercici4.l"
+#line 63 "exercici4.l"
 
 	YY_BREAK
 case 22:
 /* rule 22 can match eol */
 YY_RULE_SETUP
-#line 60 "exercici4.l"
+#line 64 "exercici4.l"
 { line_number++;
 			  BEGIN 0; }
 	YY_BREAK
 case 23:
 YY_RULE_SETUP
-#line 62 "exercici4.l"
+#line 66 "exercici4.l"
 ECHO;
 	YY_BREAK
 #line 900 "lex.yy.c"
@@ -1867,7 +1867,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 62 "exercici4.l"
+#line 66 "exercici4.l"
 
 
 int yywrap(){

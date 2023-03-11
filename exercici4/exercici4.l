@@ -26,6 +26,8 @@ int line_number = 1;
 
 
 separador ","
+variable [x-z][1-9]
+constant [a-c][1-9]
 %%
 
 [ \t]+                  /* ignorar espais blancs i tabs */ 
@@ -36,8 +38,8 @@ separador ","
 			BEGIN 0; }
 <COMMENT>.
 
-[x-z][1-9]              { return VAR;    } /* match variable */
-[a-c][1-9]		{ return CONS;	 } /* match constant */
+{variable}              { return VAR;    } /* match variable */
+{constant}		{ return CONS;	 } /* match constant */
 [P-T][1-9]		{ return PRED;   } /* match predicats */
 [f-g][1-9]		{ return FUNC;	 } /* match funcions */
 
