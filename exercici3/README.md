@@ -1,7 +1,7 @@
 # Exercici 3
 > Implementació d'un llenguatge de Lògica Proposicional amb CP0.
 
-## Index
+## Índex
 * [Canvis a l'enunciat](#canvis-a-lenunciat)
 * [Test usats](#tests-usats)
 * [Operadors](#operadors)
@@ -35,7 +35,7 @@
 - \< \- \>
 
 ## Simbols extres
-### Parentesis
+### Parèntesis
 - Formules proposicionals poden anar entre ( ).
 
 ## Variables proposicionals
