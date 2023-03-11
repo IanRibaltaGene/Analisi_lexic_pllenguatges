@@ -20,7 +20,7 @@
 - Per la mateixa rao, el OR en comptes de ∨ es fa servir ||.
 
 ## Tests usats
-- test1.txt
+- test.txt
 
 ## Operadors
 ### Negació
