@@ -4,6 +4,7 @@
 ## Índex
 * [Canvis a l'enunciat](#canvis-a-lenunciat)
 * [Test usats](#tests-usats)
+* [Com comprovar el test](#com-comprovar-el-test)
 * [Comentaris](#comentaris)
 * [Operadors](#operadors)
   * [Negació](#negació)
@@ -22,6 +23,9 @@
 
 ## Tests usats
 - test.txt
+
+## Com comprovar el test
+- `./exercici3 < test.txt`
 
 ## Comentaris
 - Comentaris començen amb `//` i acaben amb el salt de línia `\n`.
