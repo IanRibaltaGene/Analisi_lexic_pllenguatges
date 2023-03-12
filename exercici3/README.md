@@ -11,7 +11,7 @@
   * [Disjunció](#disjunció)
   * [Implicació](#implicació)
   * [Doble Implicació](#doble-implicació)
-* [Simbols extres](#simbols-extres)
+* [Símbols extres](#símbols-extres)
   * [Parèntesis](#parèntesis)
 * [Variables propocisionals](#variables-proposicionals)
 * [Separació de proposicions](#separació-de-proposicions)
@@ -24,26 +24,26 @@
 - test.txt
 
 ## Comentaris
-- Comentaris començen amb // i acaben amb el salt de línia "\n".
+- Comentaris començen amb `//` i acaben amb el salt de línia `\n`.
 
 ## Operadors
 ### Negació
-- !
+- `!`
 ### Conjunció
-- &&
+- `&&`
 ### Disjunció
-- ||
+- `||`
 ### Implicació
-- \- \>
+- `- >`
 ### Doble Implicació
-- \< \- \>
+- `< - >`
 
-## Simbols extres
+## Símbols extres
 ### Parèntesis
-- Formules proposicionals poden anar entre ( ).
+- Formules proposicionals poden anar entre `( )`.
 
 ## Variables proposicionals
 - Es poden fer servir les lletres majuscules del rang A-Z.
 
 ## Separació de proposicions
-- Per separar les proposicions es fa servir el salt de línia "\n".
+- Per separar les proposicions es fa servir el salt de línia `\n`.
