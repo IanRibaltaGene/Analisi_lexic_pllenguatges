@@ -5,6 +5,7 @@
 ## Índex
 * [Canvis a l'enunciat](#canvis-a-lenunciat)
 * [Tests usats](#tests-usats)
+* [Com executar el test](#com-executar-el-test)
 * [Variables](#variables)
 * [Constants](#constants)
 * [Predicats](#predicats)
@@ -26,6 +27,9 @@ Igual que en l'exercici 3:
 
 ## Tests usats
 - test.txt
+
+## Com executar el test
+- `./exercici4 < test.txt`
 
 ## Variables
 - Es poden fer servir les lletres minuscules del rang x-z seguit d'un digit del rang 1-9.
