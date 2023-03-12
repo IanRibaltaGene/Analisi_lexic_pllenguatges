@@ -15,7 +15,7 @@
   * [Conjunció](#conjunció)
   * [Disjunció](#disjunció)
   * [Implicació](#implicació)
-  * [Doble implicació](#doble-implicació)
+  * [Doble Implicació](#doble-implicació)
 * [Símbols extres](#símbols-extres)
   * [Parèntesis](#parèntesis)
 
@@ -56,7 +56,7 @@ Igual que en l'exercici 3:
 ### Implicació
 - `- >`
 
-### Doble implicació
+### Doble Implicació
 - `< - >`
 
 ## Símbols extres
