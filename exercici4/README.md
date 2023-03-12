@@ -28,16 +28,16 @@ Igual que en l'exercici 3:
 - test.txt
 
 ## Variables
-- Es poden fer servir les lletres minuscules del rang x-z seguit de un digit del rang 1-9.
+- Es poden fer servir les lletres minuscules del rang x-z seguit d'un digit del rang 1-9.
 
 ## Constants
-- Es poden fer servir les lletres minuscules del rang a-c seguit de un digit del rang 1-9.
+- Es poden fer servir les lletres minuscules del rang a-c seguit d'un digit del rang 1-9.
 
 ## Predicats
-- Es poden fer servir les lletres minuscules del rang P-T seguit de un digit del rang 1-9.
+- Es poden fer servir les lletres minuscules del rang P-T seguit d'un digit del rang 1-9.
 
 ## Funcions
-- Es poden fer servir les lletres minuscules del rang f-g seguit de un digit del rang 1-9.
+- Es poden fer servir les lletres minuscules del rang f-g seguit d'un digit del rang 1-9.
 
 ## Operadors
 ### Paraules reservades
