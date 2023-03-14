@@ -16,10 +16,7 @@
 #define IMP 407
 #define DIMP 408
 #define FORALL 409
-#define EXISTS 410
-#define PARESQ 411
-#define PARDRE 412
-#define SEPARATOR 413 
+#define EXISTS 410 
 
 int line_number = 1;
 %}
@@ -52,9 +49,9 @@ constant [a-c][1-9]
 "forall"		{ return FORALL; } /* match forall */
 "exists"		{ return EXISTS; } /* match exists */
 
-\(                      { return PARESQ;    } /* match parentesis esquerra */ 
-\)                      { return PARDRE;    } /* match parentesis dreta */
-{separador}		{ return SEPARATOR; } /* match separator */
+\(                      { return yytext[0];    } /* match parentesis esquerra */ 
+\)                      { return yytext[0];    } /* match parentesis dreta */
+{separador}		{ return yytext[0];    } /* match separator */
 
 \n                      { line_number++; } /* match newline, incrementa line_number */
 .                       { /* match any other character, print error */ 

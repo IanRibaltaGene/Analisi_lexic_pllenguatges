@@ -1,2 +1,0 @@
-##Llenguatge elegit
-C

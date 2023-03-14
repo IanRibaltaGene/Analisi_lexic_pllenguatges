@@ -5,6 +5,8 @@
 
 ## Índex
 * [Comentaris](#comentaris)
+* [Tests usats](#tests-usats)
+* [Com comprovar el test](#com-comprovar-el-test)
 * [Notacions](#notacions)
   * [Decimal](#decimal)
   * [Octal](#octal)
@@ -14,6 +16,12 @@
 
 ## Comentaris
 - Comença amb /* i acaba amb */ .
+
+## Tests usats
+- test1.txt
+
+## Com comprovar el test
+- `./exercici1 < test1.txt`
 
 ## Notacions
 ### Decimal
